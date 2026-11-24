@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DSA Lab Manual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>DSA Lab Manual</h1>
+    <button id="theme" class="ghost" type="button" aria-label="Switch light or dark theme">Dark mode</button>
+  </header>
+
+  <div class="layout">
+    <nav class="list" aria-label="Experiments">
+      <input id="filter" type="search" placeholder="Search experiments" aria-label="Search experiments">
+      <ol id="menu"></ol>
+    </nav>
+
+    <main id="content" tabindex="-1">
+      <p class="count" id="count"></p>
+      <h2 id="title"></h2>
+
+      <section class="manual" aria-labelledby="mlabel">
+        <h3 id="mlabel">Manual</h3>
+        <p id="manual"></p>
+      </section>
+
+      <section class="codebox" aria-labelledby="clabel">
+        <div class="codebar">
+          <h3 id="clabel">Python code</h3>
+          <button id="copy" type="button">Copy code</button>
+        </div>
+        <pre><code id="code"></code></pre>
+      </section>
+
+      <div class="pager">
+        <button id="prev" class="ghost" type="button">Previous</button>
+        <button id="next" class="ghost" type="button">Next</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
